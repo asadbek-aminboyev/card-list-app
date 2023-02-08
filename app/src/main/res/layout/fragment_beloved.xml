@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".fragments.BelovedFragment">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/txtNoCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kartalariz topilmadi"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_below="@id/txtNoCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="Karta qo'shish"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:background="@drawable/btnbackground"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -4,14 +4,92 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ecedef"
     tools:context=".MainActivity">
 
 
+
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/imgBack"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:src="@drawable/ic_back"
         />
+
+    <TextView
+        android:id="@+id/textKarta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Kartalar"
+        android:textSize="20dp"
+        android:layout_toRightOf="@id/imgBack"
+        android:textColor="#363739"
+        android:layout_marginLeft="20dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/linerImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:id="@+id/imgAdd"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_outline_add_circle_outline_24"
+            />
+
+        <ImageView
+            android:id="@+id/imgGrid"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_grid"
+            />
+
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_sync"
+            />
+
+
+    </LinearLayout>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_marginTop="30dp"
+        android:id="@+id/tabLayout"
+        android:background="#ecedef"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabTextColor="@color/black"
+        app:tabMode="scrollable"
+        android:layout_below="@id/textKarta"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/tabbackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tabLayout"/>
+
+
+
+
+
+
+
+
 
 
 

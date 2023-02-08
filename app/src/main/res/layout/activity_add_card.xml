@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ecedef"
+    tools:context=".AddCardActivity">
+
+    <ImageView
+        android:id="@+id/imgBack2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_back"/>
+
+    <LinearLayout
+        android:id="@+id/linerTextAndImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic__add_circle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RF kartalari"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginRight="15dp"
+            android:textColor="#6c31e2"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textKarta1"
+        android:layout_below="@id/imgBack2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Karta qo'shish"
+        android:textSize="32sp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="#353638"
+        android:layout_marginLeft="25dp"
+        />
+
+
+        <TextView
+            android:id="@+id/textKarta2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Karta ma'lumotlarini kiriting"
+            android:layout_below="@id/textKarta1"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="50dp"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_below="@id/textKarta2"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Karta raqami"/>
+
+                <EditText
+                    android:id="@+id/etNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+                    android:maxLength="19"
+                    android:hint="0000 0000 0000 0000"
+                    android:background="@drawable/etbackground2"/>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Muddati"/>
+
+                <EditText
+                    android:id="@+id/etYear"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="OO/YY"
+                    android:maxLength="5"
+                    android:padding="10dp"
+                    android:background="@drawable/etbackground2"/>
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btnbackground2"
+        android:padding="15dp"
+        android:text="Davom etish"
+        android:clickable="true"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"/>
+
+
+</RelativeLayout>
