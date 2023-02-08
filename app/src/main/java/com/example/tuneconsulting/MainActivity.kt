@@ -4,7 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.viewpager.widget.ViewPager
-import com.example.tuneconsulting.adapters.MyAdapter
+import com.example.tuneconsulting.adapters.TabAdapter
 import com.example.tuneconsulting.databinding.ActivityMainBinding
 import com.google.android.material.tabs.TabLayout
 
@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
 
         tabLayout.tabGravity = TabLayout.GRAVITY_CENTER
 
-        val adapter = MyAdapter(this,supportFragmentManager,tabLayout.tabCount)
+        val adapter = TabAdapter(this,supportFragmentManager,tabLayout.tabCount)
         viewPager.adapter = adapter
 
         viewPager.addOnPageChangeListener(TabLayout.TabLayoutOnPageChangeListener(tabLayout))

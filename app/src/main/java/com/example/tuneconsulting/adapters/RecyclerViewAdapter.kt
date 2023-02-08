@@ -4,15 +4,14 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.tuneconsulting.R
-import com.example.tuneconsulting.model.Card
+import com.example.tuneconsulting.data.Card
 
 class RecyclerViewAdapter constructor(
     val context: Context,
-    private val cardList: ArrayList<Card>
+    private val cardList: List<Card>
 ) : RecyclerView.Adapter<RecyclerViewAdapter.CardViewHolder>() {
 
 
